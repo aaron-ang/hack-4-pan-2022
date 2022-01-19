@@ -1,3 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .meme-container {
   display: grid;
   grid-template: auto auto / auto auto;
