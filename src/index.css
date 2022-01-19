@@ -1,0 +1,5 @@
+.meme-container {
+  display: grid;
+  grid-template: auto auto / auto auto;
+  gap: 1em;
+}
