@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 import Meme from "./Meme";
 
 function App() {
   const [memeLevel, setMemeLevel] = useState(1);
-  const [memes, setMemes] = useState([])
+  const [memes, setMemes] = useState([]);
 
+  let navigate = useNavigate();
+  function directToSecret() {
+    navigate("/secret");
+  }
+
+  // Check memeLevel state whenever app re-renders
   useEffect(() => {
     if (memeLevel === 6) {
-      window.location.href =
-        "https://www.tomorrowtides.com/alternative-nonexistent-person-wearing-meme-link.html";
+      directToSecret();
     }
   });
 
