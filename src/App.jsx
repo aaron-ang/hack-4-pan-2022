@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
+import placeholder from "./images/memes/Placeholder.jpeg";
 import Meme from "./Meme";
 
 function App() {
@@ -31,10 +32,10 @@ function App() {
       <h1>Level {memeLevel} Memes</h1>
       <div className="meme-container">
         {/* {memeElements} */}
-        <Meme name="1" />
-        <Meme name="2" />
-        <Meme name="3" />
-        <Meme name="4" />
+        <Meme name="1" img={placeholder} />
+        <Meme name="2" img={placeholder} />
+        <Meme name="3" img={placeholder} />
+        <Meme name="4" img={placeholder} />
       </div>
       <button onClick={advanceMemeLevel}>
         {memeLevel === 5 ? "Super Meme" : "Refresh"}

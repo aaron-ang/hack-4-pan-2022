@@ -7,7 +7,9 @@ function Secret() {
         className="react-player"
         url="https://www.youtube.com/embed/dQw4w9WgXcQ?"
         playing="true"
-        style={{ pointerEvents: 'none' }}
+        style={{ pointerEvents: "none" }}
+        width="50%"
+        height="35em"
       />
     </div>
   );

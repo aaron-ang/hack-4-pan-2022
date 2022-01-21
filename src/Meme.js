@@ -1,9 +1,7 @@
-import placeholder from "./images/memes/Placeholder.jpeg";
-
 function Meme(props) {
   return (
     <div className="meme">
-      <img src={placeholder}></img>
+      <img src={props.img} alt="meme" />
       <h2>Meme {props.name}</h2>
     </div>
   );

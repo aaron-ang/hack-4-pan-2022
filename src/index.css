@@ -1,3 +1,5 @@
+/*# sourceMappingURL=index.css.map */
+
 * {
   box-sizing: border-box;
 }
@@ -50,6 +52,7 @@ button {
   border: 2px #60fdc6 solid;
   border-radius: 10%;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .player-wrapper {
@@ -57,4 +60,3 @@ button {
   justify-content: center;
   align-items: center;
 }
-/*# sourceMappingURL=index.css.map */
