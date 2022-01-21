@@ -1,5 +1,16 @@
+import ReactPlayer from "react-player";
+
 function Secret() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="player-wrapper">
+      <ReactPlayer
+        className="react-player"
+        url="https://www.youtube.com/embed/dQw4w9WgXcQ?"
+        playing="true"
+        style={{ pointerEvents: 'none' }}
+      />
+    </div>
+  );
 }
 
 export default Secret;
