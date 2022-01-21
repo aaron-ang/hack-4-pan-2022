@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hack-4-pan-2022/static/css/main.3582097a.css",
+    "main.js": "/hack-4-pan-2022/static/js/main.5d94c836.js",
+    "static/js/787.600c5ef2.chunk.js": "/hack-4-pan-2022/static/js/787.600c5ef2.chunk.js",
+    "index.html": "/hack-4-pan-2022/index.html",
+    "main.3582097a.css.map": "/hack-4-pan-2022/static/css/main.3582097a.css.map",
+    "main.5d94c836.js.map": "/hack-4-pan-2022/static/js/main.5d94c836.js.map",
+    "787.600c5ef2.chunk.js.map": "/hack-4-pan-2022/static/js/787.600c5ef2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3582097a.css",
+    "static/js/main.5d94c836.js"
+  ]
+}
