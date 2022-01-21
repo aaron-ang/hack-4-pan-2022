@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-container {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 1em;
+
+    .meme {
+        $borderColor: rgba(168, 202, 231, 0.87);
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 0px;
+        border: 10px $borderColor solid;
+
+        img {
+            max-width: 40vw;
+            border: 1px solid black;
+        }
+
+        h2 {
+            background-color: $borderColor;
+            text-align: center;
+            margin: 0;
+            padding: 1rem;
+        }
+    }
+}
+
+button {
+    margin: 40px;
+    width: 330px;
+    max-width: 70vw;
+    height: 40px;
+    background-color: rgb(192, 247, 228);
+    border: 2px rgb(96, 253, 198) solid;
+    border-radius: 10%;
+
+    font-size: 1.5rem;
+}
+
+.player-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
