@@ -26,7 +26,7 @@ main {
   display: grid;
   grid-auto-flow: row;
   row-gap: 0px;
-  border: 10px rgba(240, 248, 255, 0.87) solid;
+  border: 10px rgba(168, 202, 231, 0.87) solid;
 }
 
 .meme-container .meme img {
@@ -35,7 +35,7 @@ main {
 }
 
 .meme-container .meme h2 {
-  background-color: rgba(240, 248, 255, 0.87);
+  background-color: rgba(168, 202, 231, 0.87);
   text-align: center;
   margin: 0;
   padding: 1rem;
