@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 body {
@@ -9,6 +10,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: sans-serif;
+}
+
+body::before {
+  content: "";
+  background-color: rgba(128, 128, 128, 0.164);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 main {
@@ -28,7 +40,7 @@ main {
   display: grid;
   grid-auto-flow: row;
   row-gap: 0px;
-  border: 10px rgba(168, 202, 231, 0.87) solid;
+  border: 10px rgba(236, 222, 143, 0.87) solid;
 }
 
 .meme-container .meme img {
@@ -37,7 +49,7 @@ main {
 }
 
 .meme-container .meme h2 {
-  background-color: rgba(168, 202, 231, 0.87);
+  background-color: rgba(236, 222, 143, 0.87);
   text-align: center;
   margin: 0;
   padding: 1rem;
@@ -47,12 +59,26 @@ button {
   margin: 40px;
   width: 330px;
   max-width: 70vw;
-  height: 40px;
-  background-color: #c0f7e4;
-  border: 2px #60fdc6 solid;
-  border-radius: 10%;
-  font-size: 1.5rem;
+  height: 60px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
   cursor: pointer;
+  outline: none;
+  background-color: #e4bc66;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgba(231, 225, 168, 0.87);
+}
+
+button:hover {
+  background-color: #e2a113;
+}
+
+button:active {
+  background-color: #cf971d;
+  box-shadow: 0 5px rgba(190, 186, 134, 0.87);
+  transform: translateY(4px);
 }
 
 .player-wrapper {
