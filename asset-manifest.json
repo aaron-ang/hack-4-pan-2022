@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hack-4-pan-2022/static/css/main.4fdfa7fa.css",
-    "main.js": "/hack-4-pan-2022/static/js/main.531e6a89.js",
+    "main.js": "/hack-4-pan-2022/static/js/main.25fddb4a.js",
     "static/media/Background.jpg": "/hack-4-pan-2022/static/media/Background.b76416f6989ae487862e.jpg",
     "index.html": "/hack-4-pan-2022/index.html",
     "main.4fdfa7fa.css.map": "/hack-4-pan-2022/static/css/main.4fdfa7fa.css.map",
-    "main.531e6a89.js.map": "/hack-4-pan-2022/static/js/main.531e6a89.js.map"
+    "main.25fddb4a.js.map": "/hack-4-pan-2022/static/js/main.25fddb4a.js.map"
   },
   "entrypoints": [
     "static/css/main.4fdfa7fa.css",
-    "static/js/main.531e6a89.js"
+    "static/js/main.25fddb4a.js"
   ]
 }
