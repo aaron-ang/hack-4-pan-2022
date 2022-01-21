@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <Router>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="hack-4-pan-2022" element={<App />} />
       <Route path="secret" element={<Secret />} />
     </Routes>
   </Router>,
