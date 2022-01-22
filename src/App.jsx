@@ -14,10 +14,15 @@ function importAll(r) {
 }
 
 function App() {
-  const [memeLevel, setMemeLevel] = useState(1);
-  const [memes, setMemes] = useState(
-    importAll(require.context("./images/memes", false, /\.(png|jpe?g|svg)$/))
+  const allMemes = importAll(
+    require.context("./images/memes", false, /\.(png|jpe?g|svg)$/)
   );
+  const [memeLevel, setMemeLevel] = useState(0);
+  const [memes, setMemes] = useState(getMemesByLevel(memeLevel));
+
+  function getMemesByLevel(memeLevel) {
+    return allMemes.slice(memeLevel * 4, memeLevel * 4 + 4);
+  }
 
   let navigate = useNavigate();
   function directToSecret() {
@@ -26,10 +31,11 @@ function App() {
 
   // Check memeLevel state whenever app re-renders
   useEffect(() => {
-    if (memeLevel === 6) {
+    if (memeLevel === 5) {
       directToSecret();
     }
-  });
+    setMemes(getMemesByLevel(memeLevel));
+  },[memeLevel]);
 
   function advanceMemeLevel() {
     setMemeLevel((prevMemeLevel) => prevMemeLevel + 1);
@@ -46,36 +52,18 @@ function App() {
     );
   });
 
-  function renderSwitch(memeLevel) {
-    switch (memeLevel) {
-      case 1:
-        return memeElements.slice(0, 4)
-      case 2:
-        return memeElements.slice(4, 8)
-      case 3:
-        return memeElements.slice(8, 12)
-      case 4:
-        return memeElements.slice(12, 8)
-      case 5:
-        return memeElements.slice(16, 20)
-      default:
-        console.log("memeLevel exceeded");
-    }
-  }
-
   return (
     <main>
       <h1>Level {memeLevel} Memes</h1>
       <div className="meme-container">
-        {renderSwitch(memeLevel)}
-        {/* remove hard-coded meme components below once meme images are imported */}
+        {memeElements}
         <Meme name="1" img={placeholder} />
         <Meme name="2" img={placeholder} />
         <Meme name="3" img={placeholder} />
         <Meme name="4" img={placeholder} />
       </div>
       <button onClick={advanceMemeLevel}>
-        {memeLevel === 5 ? "Super Meme" : "Refresh"}
+        {memeLevel === 4 ? "Super Meme" : "Refresh"}
       </button>
     </main>
   );
