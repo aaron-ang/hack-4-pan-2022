@@ -30,18 +30,22 @@ main {
 
 .meme-container {
     display: grid;
+    position: relative;
+    width: 90vw;
     grid-template: auto auto / auto auto;
     gap: 1em;
     $memeColor: rgba(236, 222, 143, 0.87);
 
     .meme {
         display: grid;
+        position: relative;
+        width: 100%;
         grid-auto-flow: row;
         row-gap: 0px;
         border: 10px $memeColor solid;
 
         img {
-            max-width: 40vw;
+            max-width: 100%;
             border: 1px solid black;
         }
 
