@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import placeholder from "./images/memes/Placeholder.jpeg";
 import "./index.css";
 import Meme from "./Meme";
 
@@ -19,7 +18,8 @@ function App() {
   );
   const [memeLevel, setMemeLevel] = useState(0);
   const [memes, setMemes] = useState(getMemesByLevel(memeLevel));
-
+  
+  // Retrieve 4 memes each time based on memeLevel
   function getMemesByLevel(memeLevel) {
     return allMemes.slice(memeLevel * 4, memeLevel * 4 + 4);
   }
@@ -31,7 +31,7 @@ function App() {
 
   // Check memeLevel state whenever app re-renders
   useEffect(() => {
-    if (memeLevel === 5) {
+    if (memeLevel === 3) {
       directToSecret();
     }
     setMemes(getMemesByLevel(memeLevel));
@@ -57,13 +57,9 @@ function App() {
       <h1>Level {memeLevel} Memes</h1>
       <div className="meme-container">
         {memeElements}
-        <Meme name="1" img={placeholder} />
-        <Meme name="2" img={placeholder} />
-        <Meme name="3" img={placeholder} />
-        <Meme name="4" img={placeholder} />
       </div>
       <button onClick={advanceMemeLevel}>
-        {memeLevel === 4 ? "Super Meme" : "Refresh"}
+        {memeLevel === 2 ? "Super Meme" : "Refresh"}
       </button>
     </main>
   );
