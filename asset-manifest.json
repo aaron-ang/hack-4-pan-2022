@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hack-4-pan-2022/static/css/main.dc1ab67f.css",
-    "main.js": "/hack-4-pan-2022/static/js/main.f5dccf0a.js",
+    "main.css": "/hack-4-pan-2022/static/css/main.bfa38b99.css",
+    "main.js": "/hack-4-pan-2022/static/js/main.75df9a77.js",
     "static/media/meme_09.png": "/hack-4-pan-2022/static/media/meme_09.e705e777cbe75a68d2b7.png",
     "static/media/Background.jpg": "/hack-4-pan-2022/static/media/Background.b76416f6989ae487862e.jpg",
     "static/media/meme_07.png": "/hack-4-pan-2022/static/media/meme_07.7167310dbed76d6425ef.png",
@@ -16,11 +16,11 @@
     "static/media/meme_10.jpeg": "/hack-4-pan-2022/static/media/meme_10.9976cf6462a8384d2db8.jpeg",
     "static/media/meme_12.jpeg": "/hack-4-pan-2022/static/media/meme_12.c776952e1fa0773f686b.jpeg",
     "index.html": "/hack-4-pan-2022/index.html",
-    "main.dc1ab67f.css.map": "/hack-4-pan-2022/static/css/main.dc1ab67f.css.map",
-    "main.f5dccf0a.js.map": "/hack-4-pan-2022/static/js/main.f5dccf0a.js.map"
+    "main.bfa38b99.css.map": "/hack-4-pan-2022/static/css/main.bfa38b99.css.map",
+    "main.75df9a77.js.map": "/hack-4-pan-2022/static/js/main.75df9a77.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc1ab67f.css",
-    "static/js/main.f5dccf0a.js"
+    "static/css/main.bfa38b99.css",
+    "static/js/main.75df9a77.js"
   ]
 }
