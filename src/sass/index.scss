@@ -1,3 +1,5 @@
+@import 'reset';
+
 * {
     box-sizing: border-box;
     z-index: 1;
@@ -26,6 +28,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .meme-container {
