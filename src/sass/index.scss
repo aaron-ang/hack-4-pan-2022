@@ -46,6 +46,11 @@ h2 {
     grid-template: auto auto / auto auto;
     gap: 1em;
     $memeColor: rgba(236, 222, 143, 0.87);
+    
+    @media (min-width: 1400px) {
+        width: 1200px;
+    }
+
 
     .meme {
         display: grid;
